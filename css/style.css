@@ -14,13 +14,12 @@
 
 /* Global styles for the webpage */
 body {
-  /*background-image: url(../assets/images/bg-img.png);*/
-  /*color: #ffd700;*/
-  color: #141E46;
-  background-color: #fff5e0;
+  background-image: url(../assets/images/bg-img.png);
+  color: #ffd700;
 }
 
-main { /*using type selector here*/
+main {
+  /*using type selector here*/
   width: 90vw;
   margin: auto;
   display: flex;
@@ -86,12 +85,14 @@ span {
 }
 
 /* Adding hover effect to paragraph text in about section */
-section:nth-of-type(1) p:hover { /*using pseudo-class selector here*/
+section:nth-of-type(1) p:hover {
+  /*using pseudo-class selector here*/
   text-shadow: -0.01rem 0px #ffffff;
 }
 
 /* Styling for the image in the about section */
-section:nth-of-type(1) img { /*using descendent selector here*/
+section:nth-of-type(1) img {
+  /*using descendent selector here*/
   max-width: 100%;
   height: auto;
   border: solid white;
@@ -101,7 +102,8 @@ section:nth-of-type(1) img { /*using descendent selector here*/
 }
 
 /* Skills section */
-#skills { /*using id selector here*/
+#skills {
+  /*using id selector here*/
   margin-top: 1.25rem;
   width: 80vw;
 }
@@ -110,9 +112,10 @@ section:nth-of-type(1) img { /*using descendent selector here*/
 table {
   width: 100%;
   border-collapse: collapse;
-  border: 0.625rem solid #000000;
+  border: 0.0625rem solid #ddd;
   margin-top: 0.625rem;
   background-color: white;
+  border: solid white;
 }
 
 th {
@@ -124,12 +127,10 @@ th {
 
 /* Alternating row colors for zebra pattern */
 tr:nth-child(even) {
-  /* background-color: #020102; */
-  background-color: white;
+  background-color: #020102;
 }
 tr:nth-child(odd) {
-  /* background-color: #3f203f; */
-  background-color: #FF6969;
+  background-color: #3f203f;
 }
 
 /* Hover effect for table rows */
@@ -172,20 +173,21 @@ section:nth-of-type(3) {
 }
 
 /* Styling for individual project cards */
-.project {/*using class selector here*/
+.project {
+  /*using class selector here*/
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
   margin-bottom: 1.5rem;
-  background-color: #FF6969;
-  border: solid black;
+  background-color: black;
+  border: solid white;
 }
 
 .project h3 {
   margin: 0 0 0.5rem;
   text-align: center;
-  font-family: "pt-sans", serif;/* locally hosted font on a heading */
+  font-family: "pt-sans", serif; /* locally hosted font on a heading */
 }
 
 .project img {
@@ -318,7 +320,7 @@ footer a {
   }
 
   /* Hover effect for larger heading size */
-  h2:hover{
+  h2:hover {
     transition: transform 0.5s;
     transform: scale(1.2);
   }
